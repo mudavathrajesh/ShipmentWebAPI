@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<TestDbContext>(options=>{
+builder.Services.AddDbContext<ShipmentExerciseDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("connString"));
 });
 
